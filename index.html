@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-style</title>
+    <style>
+        div{
+            font-size: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 400px;
+            height: 250px;
+            margin: 0 0 70px 100px;
+            background: grey;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+        }
+        #box{
+            width: 400px;
+            height: 250px;
+            background:
+        
+            transform: rotateX(0deg);
+            transform-origin: top;
+            transform-style: preserve-3d;
+            transition: transform 4s;
+        }
+        #box:hover{
+            transform: rotateX(-360deg);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-top: 50px;">transform-style</h1>
+    <div class="parent">
+        <div id="box" ><img src="nature2.jfif" width="400" height="250" alt=""> </div>
+        
+
+    </div>
+
+    
+</body>
+</html>
